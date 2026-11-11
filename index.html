@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>kiewi — cutting-edge tech, cut to fit</title>
+    <meta name="description" content="Cutting-edge tech, cut to fit. Solutions that bend to your business, not the other way around." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <script>
+      /* runs before anything else: every load/reload starts at the hero with the intro, so stop the browser
+         restoring the old scroll position or jumping to a #section (the hash is dropped; no auto-scroll) */
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      if (location.hash.length > 1) history.replaceState(null, '', location.pathname + location.search);
+    </script>
+    <style>#boot{z-index:100;background:radial-gradient(at 50% 42%,#fff 0%,#f7fafd 60%,#eef3f9 100%);place-items:center;transition:opacity .45s;display:grid;position:fixed;inset:0}#boot.done{opacity:0;pointer-events:none}#boot svg{overflow:visible}#boot .d{fill:none;stroke:#1f2a14;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 1;stroke-dashoffset:1px;animation:2.4s cubic-bezier(.6,0,.3,1) infinite kwDraw}#boot .rim{stroke:#8ee012;stroke-width:2.2px}#boot .quat{animation-delay:.12s}#boot .core{animation-delay:.2s}#boot .s0,#boot .b0{animation-delay:.28s}#boot .s1,#boot .b1{animation-delay:.34s}#boot .s2,#boot .b2{animation-delay:.4s}#boot .s3,#boot .b3{animation-delay:.46s}#boot .s4,#boot .b4{animation-delay:.52s}#boot .seed{fill:#050805;opacity:0;transform-box:fill-box;transform-origin:50%;animation:2.4s infinite kwSeed}#boot .k0{animation-delay:.55s}#boot .k1{animation-delay:.6s}#boot .k2{animation-delay:.65s}#boot .k3{animation-delay:.7s}#boot .k4{animation-delay:.75s}#boot .f0{animation-delay:.8s}#boot .f1{animation-delay:.85s}#boot .f2{animation-delay:.9s}#boot .f3{animation-delay:.95s}#boot .f4{animation-delay:1s}#boot .f5{animation-delay:1.05s}@keyframes kwDraw{0%{stroke-dashoffset:1px}45%,75%{stroke-dashoffset:0;opacity:1}to{stroke-dashoffset:0;opacity:0}}@keyframes kwSeed{0%,20%{opacity:0;transform:scale(.2)}40%,75%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(1)}}@media (prefers-reduced-motion:reduce){#boot .d{stroke-dashoffset:0;animation:none}#boot .seed{opacity:1;animation:none}}</style>
+    <script type="module" crossorigin src="/assets/index-BXDSYgO6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bl-84GRP.css">
+  </head>
+  <body>
+    <!-- boot loader: shows before any JS; SliceIntro fades it out on the first rendered frame -->
+    <div id="boot" role="status" aria-label="Loading kiewi">
+      <svg viewBox="-50 -50 100 100" width="64" height="64" aria-hidden="true">
+        <circle class="d rim" pathLength="1" r="45"/>
+        <path class="d quat" pathLength="1" d="M7.77 -11.97 A10.5 10.5 0 1 1 11.97 7.77 A10.5 10.5 0 1 1 -7.77 11.97 A10.5 10.5 0 1 1 -11.97 -7.77 A10.5 10.5 0 1 1 7.77 -11.97Z"/>
+        <circle class="d core" pathLength="1" r="6"/>
+        <path class="d s0" pathLength="1" d="M1.7 -7.8 L6.7 -31.3"/><path class="d s1" pathLength="1" d="M7.9 -1.1 L34.7 -4.9"/><path class="d s2" pathLength="1" d="M4.2 6.8 L17.0 27.1"/><path class="d s3" pathLength="1" d="M-4.9 6.3 L-21.5 27.6"/><path class="d s4" pathLength="1" d="M-7.7 -2.2 L-30.8 -8.8"/>
+        <circle class="d b0" pathLength="1" cx="6.7" cy="-31.3" r="4.6"/><circle class="seed k0" cx="6.7" cy="-31.3" r="1.7"/><circle class="d b1" pathLength="1" cx="34.7" cy="-4.9" r="4.6"/><circle class="seed k1" cx="34.7" cy="-4.9" r="1.7"/><circle class="d b2" pathLength="1" cx="17.0" cy="27.1" r="4.6"/><circle class="seed k2" cx="17.0" cy="27.1" r="1.7"/><circle class="d b3" pathLength="1" cx="-21.5" cy="27.6" r="4.6"/><circle class="seed k3" cx="-21.5" cy="27.6" r="1.7"/><circle class="d b4" pathLength="1" cx="-30.8" cy="-8.8" r="4.6"/><circle class="seed k4" cx="-30.8" cy="-8.8" r="1.7"/>
+        <circle class="seed f0" cx="25" cy="-30" r="1.2"/><circle class="seed f1" cx="-36" cy="12" r="1.2"/><circle class="seed f2" cx="38" cy="20" r="1.2"/><circle class="seed f3" cx="-14" cy="38" r="1.2"/><circle class="seed f4" cx="-30" cy="-28" r="1.2"/><circle class="seed f5" cx="8" cy="-40" r="1.2"/>
+      </svg>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
